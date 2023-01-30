@@ -91,12 +91,22 @@ a {
   text-decoration: none;
 }
 
+footer{
+  min-height: 5%;
+}
+
 .h-nav{  
   height: 5%;
 }
 .img-logo{
   top:-8rem;
 }
+
+.min-d{
+  min-width: 22rem;
+  min-height: 15rem;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
@@ -113,12 +123,20 @@ a {
   nav > h1 {
     display: none;
   }
+  nav > ul {
+    justify-content: center;
+    padding: 0 !important;
+  }
+  .nav {
+    padding:0;
+    justify-content: center;
+  }
   .logo{
-    height: 12rem;
-    width: 12rem;
+    height: 15rem;
+    width: 15rem;
   }
   .img-logo{
-    top: -5rem;
+    top: -6rem;
   }
   .banner > * > h2 {
     font-size: 2.5rem;
@@ -126,6 +144,10 @@ a {
   .banner > * > h3 {
     font-size: 1.5rem;
     text-align: center;
+  }
+  .me{
+    padding-left: 10%;
+    padding-right: 10%;
   }
 }
 @media (max-width: 376px) {

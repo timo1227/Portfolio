@@ -8,13 +8,13 @@ const fetcher = (url: string) => fetch(url).then((res) => res.json());
 export default function Repo() {
     const { data, error } = useSWR("/api/getRepo", fetcher);
 
-    if (error) return <div>failed to load</div>;
+    if (error) return <div className="font-bold">Failed to load</div>;
     if (!data) return <div>Loading...</div>;
 
     console.log(data);
     return (
-        <div className="flex flex-wrap min-w-fit ">
-            <h2 className="text-4xl text-center w-full mt-7">My Projects</h2>
+        <div className="flex flex-wrap justify-around min-w-fit py-20">
+            <h2 className="font-Burtons text-4xl text-center w-full mt-7">My Projects</h2>
             <ul className="flex flex-wrap justify-center px-20 gap-10">
                 {
                     data.map((repo: any) => {
@@ -23,26 +23,26 @@ export default function Repo() {
                         }
                         return (
                             <li key={repo.id}>
-                                <CCard className="my-10 max-w-xl min-w-450">
+                                <CCard className="my-10 max-w-sm min-d">
                                     <CCardHeader>
-                                        <h3 className="font-Burtons">{repo.name}</h3>
+                                        <h3 className="font-Burtons text-center">{repo.name}</h3>
                                     </CCardHeader>
                                     <CCardBody>
                                         <CRow>
-                                            <CCol>
+                                            <CCol className="text-center">
                                                 <p>{repo.description}</p>
                                             </CCol>
-                                            <CCol className="flex justify-center items-center">
-                                                <CButton
-                                                    href={repo.html_url}
-                                                    target="_blank"
-                                                    rel="noreferrer"
-                                                    color="primary"
-                                                    className="bg-indigo-600 hover:bg-indigo-800 hover:text-black "
-                                                >
-                                                    Visit Repo
-                                                </CButton>
-                                            </CCol>
+                                        </CRow>
+                                        <CRow className="absolute bottom-0 m-0flex justify-center w-full py-2 pr-3">
+                                            <CButton
+                                                href={repo.html_url}
+                                                target="_blank"
+                                                rel="noreferrer"
+                                                color="primary"
+                                                className="bg-indigo-600 w-auto  hover:bg-orange-400 hover:text-black"
+                                            >
+                                                Visit Repo
+                                            </CButton>
                                         </CRow>
                                     </CCardBody>
                                 </CCard>
