@@ -15,7 +15,7 @@ const SiteHeader = () => {
   return (
     <header
       className={cn(
-        'sticky z-50 flex w-full items-center px-1 py-5',
+        'sticky top-0 z-50 flex w-full items-center px-1 py-5',
         'border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60',
         'justify-between',
         fontBebasNeue.className
