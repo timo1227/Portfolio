@@ -5,7 +5,7 @@ import { Button } from './ui/button';
 
 const MainNav = () => {
   return (
-    <div className='hidden w-full items-center justify-evenly md:flex'>
+    <div className='mx-auto hidden w-full max-w-screen-2xl items-center justify-evenly md:flex'>
       <p className='text-3xl font-bold'>Timothy Estrada</p>
       <ul className='flex gap-10 pr-20 text-2xl '>
         <li>
