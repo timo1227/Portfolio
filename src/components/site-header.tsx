@@ -1,6 +1,7 @@
 import { Bebas_Neue } from 'next/font/google';
 import Link from 'next/link';
 import { AiOutlineLinkedin } from 'react-icons/ai';
+import { IoDocumentTextOutline } from 'react-icons/io5';
 
 import { cn } from '@/lib/utils';
 
@@ -26,6 +27,23 @@ const SiteHeader = () => {
 
       <nav className='flex items-center md:hidden'>
         <Link
+          href='https://storage.googleapis.com/my-personal-proj/TimothyEstrada.pdf'
+          target='_blank'
+          rel='noreferrer'
+        >
+          <div
+            className={cn(
+              buttonVariants({
+                variant: 'ghost',
+              }),
+              'w-9 px-0'
+            )}
+          >
+            <IoDocumentTextOutline className='h-5 w-5' />
+            <span className='sr-only'>GitHub</span>
+          </div>
+        </Link>
+        <Link
           href='https://www.github.com/timo1227'
           target='_blank'
           rel='noreferrer'
@@ -38,7 +56,7 @@ const SiteHeader = () => {
               'w-9 px-0'
             )}
           >
-            <Icons.gitHub className='h-4 w-4' />
+            <Icons.gitHub className='h-5 w-5' />
             <span className='sr-only'>GitHub</span>
           </div>
         </Link>
@@ -55,7 +73,7 @@ const SiteHeader = () => {
               'w-9 px-0'
             )}
           >
-            <AiOutlineLinkedin className='h-5 w-5 fill-current' />
+            <AiOutlineLinkedin className='h-6 w-6 fill-current' />
             <span className='sr-only'>linkedin</span>
           </div>
         </Link>
