@@ -49,7 +49,7 @@ const PageBanner = () => {
       </div>
       <PageActions>
         <Link
-          href='/docs'
+          href='mailto:the4@njit.edu'
           className={cn(
             buttonVariants({
               variant: 'outline',
