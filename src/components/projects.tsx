@@ -73,7 +73,9 @@ const Projects = async () => {
                       <CardTitle>{repo.name}</CardTitle>
                     </CardHeader>
                     <CardContent className=''>
-                      <CardDescription>{repo.description}</CardDescription>
+                      <CardDescription className='line-clamp-3'>
+                        {repo.description}
+                      </CardDescription>
                     </CardContent>
                     <CardFooter className='relative bottom-0'>
                       <Button className='w-auto'>
