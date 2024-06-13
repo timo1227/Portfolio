@@ -16,8 +16,8 @@ const IndexPage = () => {
           <h1 className='font-Burtons text-4xl font-bold'>About Me</h1>
           <p className='text-xl leading-9 md:max-w-[66%]'>
             A dedicated <strong>Software Engineer</strong> from{' '}
-            <strong>New Jersey</strong> and a recent{' '}
-            <strong>Computer Science</strong> graduate from the{' '}
+            <strong>New Jersey</strong> and {' '}
+            <strong>Computer Science</strong> graduate from {' '}
             <strong>New Jersey Institute of Technology</strong>. My journey in tech has been
             marked by a fervent drive to master various{' '}
             <strong>programming languages</strong> and{' '}
