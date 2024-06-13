@@ -66,7 +66,7 @@ const MobileNav = () => {
           <MobileLink href='#project' onOpenChange={setOpen}>
             Project
           </MobileLink>
-          <MobileLink href='mailto:the4@njit.edu' onOpenChange={setOpen}>
+          <MobileLink href='mailto:tim.estrada@techtim.dev' onOpenChange={setOpen}>
             Contact
           </MobileLink>
         </div>
