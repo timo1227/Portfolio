@@ -15,7 +15,7 @@ const MainNav = () => {
           <Link href='#project'>Projects</Link>
         </li>
         <li>
-          <Link href='mailto:the4@njit.edu'>Contact</Link>
+          <Link href='mailto:tim.estrada@techtim.dev'>Contact</Link>
         </li>
       </ul>
       <Button variant='ghost'>
