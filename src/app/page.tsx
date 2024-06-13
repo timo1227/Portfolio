@@ -18,8 +18,7 @@ const IndexPage = () => {
             A dedicated <strong>Software Engineer</strong> from{' '}
             <strong>New Jersey</strong> and a recent{' '}
             <strong>Computer Science</strong> graduate from the{' '}
-            <strong>New Jersey Institute of Technology</strong> as of{' '}
-            <strong>December 2023</strong>. My journey in tech has been
+            <strong>New Jersey Institute of Technology</strong>. My journey in tech has been
             marked by a fervent drive to master various{' '}
             <strong>programming languages</strong> and{' '}
             <strong>development tools</strong>, enabling me to transform
